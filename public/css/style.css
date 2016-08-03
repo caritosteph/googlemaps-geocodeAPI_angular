@@ -1,0 +1,122 @@
+body {
+  font-family: "Roboto"; }
+
+.back-content {
+  margin-top: 90px;
+  background-color: #eaeaea; }
+
+md-input-container .md-input {
+  background: white !important;
+  border-color: white;
+  height: 41px !important; }
+
+.container-layout {
+  height: 70px; }
+
+.label-container {
+  padding-top: 30px;
+  padding-bottom: 22px; }
+
+label {
+  margin: 0 30px 5px 0; }
+  label.label-style {
+    margin-top: 15px; }
+
+checked .md-off {
+  border-color: white !important; }
+
+md-checkbox .md-container {
+  width: 30px !important;
+  height: 30px !important;
+  background-color: white; }
+
+md-checkbox .md-icon {
+  width: 30px !important;
+  height: 30px !important;
+  border-width: 0px !important; }
+
+md-checkbox.md-default-theme.md-checked .md-icon {
+  background-color: white; }
+
+md-checkbox.md-checked .md-icon {
+  background-color: white; }
+  md-checkbox.md-checked .md-icon:after {
+    left: 12px !important;
+    top: 7px !important;
+    border-width: 2.5px;
+    border-color: #FFB300; }
+
+md-checkbox.md-default-theme.md-checked .md-ink-ripple, md-checkbox.md-checked .md-ink-ripple {
+  color: #FFB300; }
+
+md-radio-button {
+  display: inline !important;
+  padding-right: 15px; }
+  md-radio-button.md-default-theme.md-checked .md-off, md-radio-button.md-checked .md-off {
+    border-color: white; }
+  md-radio-button.md-default-theme .md-on, md-radio-button .md-on {
+    background-color: #FFB300; }
+  md-radio-button .md-off {
+    width: 30px !important;
+    height: 30px !important;
+    border-width: 1px;
+    background: white;
+    border-color: white; }
+  md-radio-button .md-on, md-radio-button .md-container {
+    width: 30px !important;
+    height: 30px !important; }
+  md-radio-button .md-label {
+    margin-left: 38px !important; }
+
+md-checkbox .md-label {
+  margin-left: 38px !important; }
+
+.layout-align-start-center.layout-row.flex-gt-sm-70 {
+  padding-top: 11px; }
+
+.md-button {
+  width: 100%;
+  border-radius: 1px !important;
+  font-weight: 700 !important;
+  font-size: 15px !important; }
+  .md-button.md-raised, .md-button.md-primary.md-raised:hover {
+    background-color: #FFB300; }
+
+md-input-container.md-input-invalid .md-input, md-input-container.md-input-invalid .md-input-focused {
+  border: 1px solid #e60808 !important; }
+
+.md-button span {
+  color: white; }
+
+.md-button.md-ink-ripple.md-input-focused .md-ripple-container {
+  background-color: #FFB300 !important; }
+
+.md-button.md-ripple-container {
+  background-color: #FFB300; }
+
+.md-button.md-raised:not([disabled]):hover, .md-button.md-raised:not([disabled]):focus {
+  background-color: #ffb300; }
+
+.md-button:not([disabled]):hover, .md-button:not([disabled]):focus {
+  background-color: #ffb300; }
+
+md-input-container.md-default-theme:not(.md-input-invalid).md-input-focused.md-input, md-input-container.md-block:not(.md-input-has-value).md-input-focused.md-input {
+  border-color: white !important; }
+
+.md-button.md-default-theme:not([disabled]).md-focused, .md-button:not([disabled]).md-focused {
+  background-color: #ffb300; }
+
+md-toast .md-toast-content {
+  background-color: #b91818; }
+
+.angular-google-map-container {
+  height: 400px; }
+
+md-toolbar:not(.md-menu-toolbar) {
+  background-color: #27d412;
+  margin-top: 30px; }
+
+md-input-container:not(.md-input-has-value)input:not(:focus) {
+  color: red; }
+
+/*# sourceMappingURL=style.css.map */

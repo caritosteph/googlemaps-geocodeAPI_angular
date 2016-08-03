@@ -1,0 +1,21 @@
+{
+  "name": "mcmakler-frontend-test",
+  "version": "0.1",
+  "ignore": [],
+  "dependencies": {
+    "jquery": "^2.1.4",
+    "angular": "^1.5.0",
+    "lodash": "^4.11",
+    "angular-aria": "~1.5",
+    "angular-animate": "~1.5",
+    "angular-ui-router": "^0.2.18",
+    "angular-resource": "^1.5",
+    "bootstrap": "^3.3.6",
+    "angular-material": "^1.0.9",
+    "angular-google-maps": "^2.3.3",
+    "angular-messages": "^1.5.8"
+  },
+  "resolutions": {
+    "angular": "^1.5.0"
+  }
+}

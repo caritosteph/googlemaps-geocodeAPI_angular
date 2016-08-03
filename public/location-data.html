@@ -1,0 +1,92 @@
+<div ng-controller="TestCtrl as projectVm" flex layout="row" layout-align="center center">
+  <div flex-xs="95" flex-sm="75" flex-gt-sm="60" flex-gt-md="50" flex-gt-lg="50">
+  <md-content class="md-padding back-content">
+    <div flex-sm="100" flex-gt-sm="90" layout="column">
+      <form ng-cloak name="projectForm">
+            <div layout="row"  class="container-layout">
+              <div flex-gt-sm="60" flex-sm="35" flex-xs="30" layout="row" layout-align="end center" >
+                <label class="label-style">Street</label>
+              </div>
+              <div flex-gt-sm="70" flex-sm="55" flex-xs="60">
+                <md-input-container md-no-float class="md-block">
+                  <input ng-model="project.street" name="street" placeholder="Street" required>
+                  <div ng-messages="projectForm.street.$error">
+                    <div ng-message="required">This is required.</div>
+                  </div>
+                </md-input-container>
+              </div>
+            </div>
+
+            <div layout="row" class="container-layout">
+              <div flex-gt-sm="60"  flex-sm="35"  flex-xs="30" layout="row" layout-align="end center" >
+                <label class="label-style">House Number</label>
+              </div>
+              <div flex-gt-sm="70" flex-sm="55" flex-xs="60">
+                <md-input-container md-no-float class="md-block">
+                  <input ng-model="project.housenumber" name="housenumber" placeholder="House Number" >
+
+                </md-input-container>
+              </div>
+            </div>
+
+            <div layout="row" class="container-layout">
+              <div flex-gt-sm="60" flex-sm="35" flex-xs="30" layout="row" layout-align="end center" >
+                <label class="label-style">Postal Code</label>
+              </div>
+              <div flex-gt-sm="70" flex-sm="55" flex-xs="60">
+                <md-input-container md-no-float class="md-block">
+                  <input ng-model="project.postalcode" name="postalcode" placeholder="Postal Code" >
+
+                </md-input-container>
+              </div>
+            </div>
+
+            <div layout="row" class="container-layout">
+              <div layout="row" layout-align="end center" flex-gt-sm="60" flex-sm="35" flex-xs="30">
+                <label class="label-style">City</label>
+              </div>
+              <div flex-gt-sm="70" flex-sm="55" flex-xs="60">
+                <md-input-container md-no-float class="md-block">
+                  <input ng-model="project.city" name="city" placeholder="City" >
+                  
+                </md-input-container>
+              </div>
+            </div>
+
+            <div layout="row" class="container-layout">
+              <div flex-gt-sm="60" flex-sm="35" flex-xs="30" layout="row" layout-align="end center" >
+                <label class="label-style">Gender</label>
+              </div>
+              <div flex-gt-sm="70" flex-sm="55" flex-xs="60" layout="row" layout-align="start center">
+                <md-radio-group ng-model="project.radio">
+                    <md-radio-button ng-repeat="radiovalue in projectVm.radioData" ng-value="radiovalue.value">{{ radiovalue.label }}
+                </md-radio-group>
+              </div>
+            </div>
+
+            <div layout="row" class="container-layout">
+              <div flex-gt-sm="60" flex-sm="35" flex-xs="30" flex-gt-xs="50" layout="row" layout-align="end center" >
+                <label >Hobby</label>
+              </div>
+              <div flex-gt-sm="70" flex-sm="55" flex-xs="60"  flex-gt-xs="50" layout="row" layout-align="start center">
+                <div  flex="100" ng-repeat="item in projectVm.checkitems">
+                  <md-checkbox ng-model="project.check" >
+                   {{ item }}
+                  </md-checkbox>
+                </div>
+              </div>
+            </div>
+
+            <div layout="row" class="container-layout">
+              <div flex-gt-sm="58" flex-sm="35" flex-xs="30">
+              </div>
+              <div flex-gt-sm="55" flex-sm="55" flex-xs="60">
+                <md-button class="md-raised" ng-click="projectVm.submit(project)">Submit</md-button>
+              </div>
+            </div>
+
+        </form>
+      </div>
+    </md-content>
+  </div>
+</div>

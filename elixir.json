@@ -1,0 +1,9 @@
+{
+  "css": {
+    "cssnano": {
+      "pluginOptions": {
+        "zindex": false
+      }
+    }
+  }
+}

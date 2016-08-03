@@ -1,0 +1,23 @@
+<section>
+  <div flex layout="row" layout-align="center center" ng-controller="MapCtrl as mc">
+    <div flex-xs="95" flex-sm="75" flex-gt-sm="60" flex-gt-md="50" flex-gt-lg="50">
+      <md-toolbar>
+        <div class="md-toolbar-tools">
+          <h2>
+            <p>The coordinates for this address are: {{mc.points.lat}}, {{mc.points.lng}}</p>
+          </h2>
+          <span flex></span>
+        </div>
+      </md-toolbar>
+      <md-content class="md-padding back-content">
+          <ui-gmap-google-map center="mc.location.center" zoom="mc.location.zoom" options="mc.options">
+            <ui-gmap-marker coords="mc.location.center" options="mc.options"  idkey="mc.id">
+            </ui-gmap-marker>
+        </ui-gmap-google-map>
+        <md-button aria-label="Go Back"  class="md-raised" ng-click="mc.goBack()">
+          Go Back
+        </md-button>
+      </md-content>
+    </div>
+  </div>
+</section>
