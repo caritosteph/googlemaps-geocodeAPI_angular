@@ -1,6 +1,3 @@
-# FRONT-END TEST (PRACTICAL)
-*Estimated time required: 3 hours.*
-
 ## BEFORE YOU START
 - make sure you have npm on your dev machine
 - run `npm i` to install npm dependencies
@@ -45,14 +42,3 @@
   * If successful, use motion to display a message in the page that reads: “The coordinates for this address are: {{lat}}, {{lng}}”
 3. Implement the geocode functionality such that it can be reused, even without this form, even in a completely different form (for example: it accepts an address object, and returns the same object with two new properties: `successful` (boolean), and `location` (object).
 4. Leave comments where you were not sure how to properly proceed (or had time limitations)
-
-## BONUS POINTS
-
-* Usage of Angular.
-* Usage of SCSS / SASS.
-* Usage of Bootstrap LESS.
-* Usage of MaterialDesign.
-* Usage of ngResource.
-* Usage of the ui-router.
-* Usage of Angular conventions found [here](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md).
-* Performant animations – especially on mobile.
