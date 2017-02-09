@@ -1,3 +1,6 @@
+#Google Maps Aplication
+![homepage](https://github.com/caritosteph/googlemaps-geocodeAPI-angular/blob/master/screenshots/HomePage.png)
+![google maps](https://github.com/caritosteph/googlemaps-geocodeAPI-angular/blob/master/screenshots/GoogleMaps.png)
 ## BEFORE YOU START
 - make sure you have npm on your dev machine
 - run `npm i` to install npm dependencies
